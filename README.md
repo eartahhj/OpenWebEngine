@@ -49,6 +49,15 @@ PHP, HTML, CSS, Javascript, jQuery, SQL (MySQL and PostgreSQL)
 - Debug mode to see "debug messages" only visible to the admin
 - Language is defined by the user's browser or eventual cookie if set
 
+# Install instructions
+Note: as mentioned, this is not ready to deploy, so will need manual work from you. You can still try it if you just want to see how the code is and how the logic works.
+- Download the latest release and upload the files in your server.
+- If you use MySQL, you can create tables by using the file mysql.sql
+- Configure config/config.php, config/smtp.php, core/database.php and eventually bootstrap.php
+- Change views according to your needs, expecially dwe/views/templates/template-*.php
+
+You can contact me if needed.
+
 # Demo
 You can see a production demo at [GamingHouse](https://www.gaminghouse.community), it is a website that I work a lot on and is made with this framework.
 
