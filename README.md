@@ -51,3 +51,8 @@ PHP, HTML, CSS, Javascript, jQuery, SQL (MySQL and PostgreSQL)
 
 # Demo
 You can see a production demo at [GamingHouse](https://www.gaminghouse.community), it is a website that I work a lot on and is made with this framework.
+
+# Donate and support
+You can buy me a ☕ cup of tea (or a slice of 🍕 pizza hehe) at [LiberaPay](https://liberapay.com/GamingHouse/donate).
+Or, if you prefer, you can just follow me on [Facebook](https://www.facebook.com/Gaming-House-101452284805560/) and [Youtube](https://www.youtube.com/GamingHouseYT?sub_confirmation=1).
+Thanks!
