@@ -1,0 +1,50 @@
+<FilesMatch "\.(pdf|jpg|jpeg|png|gif|js|css|ttf|woff|woff2|otf|eot|svg|webp|avif)$">
+    Header set Cache-Control "no-cache, max-age=31536000, must-revalidate"
+</FilesMatch>
+
+# Replace with your remote folders
+SetEnv APP_ROOT "/var/www/html/yoursite.com/dwe/"
+SetEnv APP_PUBLIC "/var/www/html/yoursite.com/public_html/"
+
+RewriteEngine On
+
+# You can remove or comment these lines if you don't need using webp automatically
+# /uploads/ folder:
+RewriteCond %{HTTP_ACCEPT} image/webp
+RewriteCond %{REQUEST_URI} /uploads/
+RewriteCond %{DOCUMENT_ROOT}/uploads/webp/$1\.webp -f
+RewriteRule ^uploads/(.+)\.(?:jpe?g|png)$ /uploads/webp/$1.webp [L]
+Header append Vary Accept env=REDIRECT_webp
+
+# /img/ folder:
+RewriteCond %{HTTP_ACCEPT} image/webp
+RewriteCond %{REQUEST_URI} /img/
+RewriteCond %{DOCUMENT_ROOT}/img/webp/$1\.webp -f
+RewriteRule ^img/(.+)\.(?:jpe?g|png)$ /img/webp/$1.webp [L]
+Header append Vary Accept env=REDIRECT_webp
+
+# /medialibrary/ folder:
+RewriteCond %{HTTP_ACCEPT} image/webp
+RewriteCond %{REQUEST_URI} /medialibrary/
+RewriteCond %{DOCUMENT_ROOT}/medialibrary/webp/$1\.webp -f
+RewriteRule ^medialibrary/(.+)\.(?:jpe?g|png)$ /medialibrary/webp/$1.webp [L]
+Header append Vary Accept env=REDIRECT_webp
+
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+# You can remove these lines if you don't plan on serving files with PHP.
+# It can be useful if you have multiple image formats and/or you prefer using dynamic urls
+# (like /img/image instead of /img/image.png)
+RewriteCond %{REQUEST_URI} /medialibrary/
+RewriteRule (.*) /getfile.php/request=$1 [L]
+Header set Cache-Control "no-cache, max-age=31536000, must-revalidate"
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} /admin/
+RewriteRule . /admin/index.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
