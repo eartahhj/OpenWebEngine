@@ -319,6 +319,7 @@ class PageCategory extends Page
             AND pages.title_$_language != ''
             AND pages.url_$_language != ''
             AND pages.html_$_language != ''
+            AND NOT pages.hidden_$_language
         ORDER BY pages.id DESC
         SQL;
 
