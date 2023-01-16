@@ -211,7 +211,7 @@ class Router
         return;
     }
 
-    public static function redirectTo(string $url, int $httpResponseCode = null): void
+    public static function redirectTo(string $url, int $httpResponseCode = 302): void
     {
         header("Location: $url", true, $httpResponseCode);
         exit();

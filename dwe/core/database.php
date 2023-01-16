@@ -283,7 +283,13 @@ class DatabaseMySQL extends DatabaseModel
 
     public static function query(string $query)
     {
-        return static::$connection->query($query);
+        try {
+            $dbConnection = static::$connection->query($query);
+        } catch(Exception $e) {
+            error_log($e->getMessage());
+        }
+
+        return $dbConnection;
     }
 
     public static function fetch($result)
