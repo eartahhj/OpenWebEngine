@@ -1,6 +1,6 @@
 <?php
 
-use DifferentWebEngine\EmailSender\Email;
+use OpenWebEngine\EmailSender\Email;
 
 require_once $_SERVER['APP_ROOT'] . 'models/pages.php';
 require_once $_SERVER['APP_ROOT'] . 'models/comments.php';

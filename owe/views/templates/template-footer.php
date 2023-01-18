@@ -16,7 +16,7 @@
             <div class="container">
                 <div class="grid">
                     <div class="grid-col">
-                        <h2>differentWebEngine</h2>
+                        <h2>OpenWebEngine</h2>
                         <nav id="nav-lang">
                             <p><?=($_language == 'it' ? 'Switch to ' : "Passa all'")?><a href="/<?=($_language == 'it' ? 'en' : 'it')?>"><?=($_language == 'it' ? 'English' : 'Italiano')?></a></p>
                         </nav>
@@ -45,7 +45,7 @@
         </div>
         <div id="footer-bottom">
             <div class="container">
-                <h3>made by <a href="https://github.com/eartahhj" rel="external noopener" target="_blank">eartahhj</a> with <a href="https://github.com/eartahhj"  rel="external noopener" target="_blank">differentWebEngine</a>, an open source framework.</h3>
+                <h3>made by <a href="https://github.com/eartahhj" rel="external noopener" target="_blank">eartahhj</a> with <a href="https://github.com/eartahhj"  rel="external noopener" target="_blank">OpenWebEngine</a>, an open source framework.</h3>
             </div>
         </div>
     </footer>

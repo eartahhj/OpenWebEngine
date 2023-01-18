@@ -1,12 +1,12 @@
 <?php
-namespace DifferentWebEngine\EmailSender;
+namespace OpenWebEngine\EmailSender;
 
 // NOTE: Helper class to send emails, but you can just use PHPMailer directly if you prefer.
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-use DifferentWebEngine\SMTP\SMTPServer;
+use OpenWebEngine\SMTP\SMTPServer;
 
 require_once $_SERVER['APP_ROOT'] . 'config/smtp.php';
 

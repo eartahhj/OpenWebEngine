@@ -1,8 +1,8 @@
 <?php
 
-namespace DifferentWebEngine\Forms;
+namespace OpenWebEngine\Forms;
 
-// NOTE: This is an experimental library included in differentWebEngine.
+// NOTE: This is an experimental library included in OpenWebEngine.
 // Could be used standalone too, but it's not well tested yet.
 
 define('INPUT_TYPE_TEXT', 'text');

@@ -8,7 +8,7 @@ require_once $_SERVER['APP_ROOT'] . 'models/custom/navigation-admin.php';
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <title>differentWebEngine - Admin</title>
+        <title>OpenWebEngine - Admin</title>
         <link rel="stylesheet" href="<?=Config::$cssFolder?>style-global.css" title="Default">
         <link rel="stylesheet" href="<?=Config::$cssFolder?>bootstrap.css">
         <link rel="stylesheet" type="text/css" href="<?=Config::$javascriptFolder?>chosen/chosen.css" />

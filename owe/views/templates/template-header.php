@@ -35,7 +35,7 @@ require_once $_SERVER['APP_ROOT'] . 'models/custom/navigation-guest.php';
         <meta charset="UTF-8">
         <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <title><?=htmlspecialchars($_template->getEntity('title'))?> - differentWebEngine</title>
+        <title><?=htmlspecialchars($_template->getEntity('title'))?> - OpenWebEngine</title>
         <link rel="shortcut icon" href="/img/logo.png" />
         <?php if ($canonicalUrl):?>
         <link rel="canonical" href="<?=$canonicalUrl?>" />
@@ -94,7 +94,7 @@ require_once $_SERVER['APP_ROOT'] . 'models/custom/navigation-guest.php';
         <?php if ($_page->getImage()):?>
         <meta property="og:image" content="https://www.yourwebsite.com/uploads/<?=$_page->getImage()?>" />
         <?php endif?>
-        <meta property="og:site_name" content="differentWebEngine">
+        <meta property="og:site_name" content="OpenWebEngine">
         <meta property="fb:pages" content="" />
     </head>
     <body>
@@ -106,7 +106,7 @@ require_once $_SERVER['APP_ROOT'] . 'models/custom/navigation-guest.php';
                             <picture>
                                 <source srcset="/img/webp/logo.webp" type="image/webp">
                                 <source srcset="/img/logo.png" type="image/png">
-                                <img src="/img/logo.png" alt="differentWebEngine" width="100" height="100">
+                                <img src="/img/logo.png" alt="OpenWebEngine" width="100" height="100">
                             </picture>
                         </a>
                     </span>

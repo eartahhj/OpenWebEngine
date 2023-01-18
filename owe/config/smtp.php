@@ -1,5 +1,5 @@
 <?php
-namespace DifferentWebEngine\SMTP;
+namespace OpenWebEngine\SMTP;
 
 class SMTPServer
 {

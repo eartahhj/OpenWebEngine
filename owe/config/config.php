@@ -4,7 +4,7 @@ class Config
 {
     public const DEFAULT_HOMEPAGE_URL = '';
 
-    public static $appName = 'differentWebEngine';
+    public static $appName = 'OpenWebEngine';
     public static $appVersion = '1.0.0';
     public static $templatesDirectory = '';
     public static $cssFolder = '/css/';

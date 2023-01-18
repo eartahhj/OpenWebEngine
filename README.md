@@ -1,7 +1,7 @@
-# differentWebEngine
+# OpenWebEngine
 Open Source PHP Framework
 
-# What is differentWebEngine?
+# What is OpenWebEngine?
 This is an open source *Experimental* PHP Framework. It works as a standalone so you don't need particular dependencies. You can use some external libraries that you can find in the *vendor* folder, like PHPMailer and Matomo, but can also go without them.
 
 I have been working on this for years for my personal projects and to learn how to do things my own way. So in the end I have decided to share it freely so that others might find inspiration from this and also to showcase some of my knowledge. This way, you can see what I can do and how I do it.
